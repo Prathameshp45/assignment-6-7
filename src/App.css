@@ -1,38 +1,183 @@
-.App {
+
+
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
   text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input,
+select,
+textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+br {
+  margin-bottom: 10px;
+}
+
+
+
+/* src/App.css */
+/* src/App.css */
+
+#search-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#search-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+#cart-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#cart-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#cart-input {
+  width: calc(100% - 90px);
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#add-item-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact-list {
+  font-family: Arial, sans-serif;
+  padding: 300px;
+}
+
+.contact-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.contact-name {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-phone, .contact-email {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-email a {
+  color: #0066cc;
+  text-decoration: none;
 }
